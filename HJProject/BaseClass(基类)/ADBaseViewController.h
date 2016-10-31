@@ -56,12 +56,12 @@
  */
 - (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion;
 
-#pragma mark - MJRefesh
-
-// 头部刷新
-- (void)mj_headerRefesh;
-
-// 底部刷新
-- (void)mj_footerRefesh;
+//#pragma mark - MJRefesh
+//
+//// 头部刷新
+//- (void)mj_headerRefesh;
+//
+//// 底部刷新
+//- (void)mj_footerRefesh;
 
 @end
