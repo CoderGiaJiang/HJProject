@@ -98,6 +98,30 @@
     return scaledImage;
 }
 
+/**
+ 压缩图片，对图片质量要求不是很高
+
+ @param quality 压缩质量，压缩程度(0~1),越高失真越严重
+ @param size 制定的尺寸
+ @return 图片
+ */
+- (UIImage*)hj_compressImageWithCompressionQuality:(CGFloat)quality scaleToSize:(CGSize)size
+{
+    UIImageJPEGRepresentation(self, quality);
+    return [self hj_zoomImageWithScaleToSize:size];
+}
+
+/**
+ 压缩图片，对图片质量要求比较高
+
+ @param size 制定的尺寸
+ @return 图片
+ */
+- (UIImage*)hj_compressImageScaleToSize:(CGSize)size
+{
+    UIImagePNGRepresentation(self);
+    return [self hj_zoomImageWithScaleToSize:size];
+}
 
 /**
  给图片设置圆角，提高性能去除混合图层

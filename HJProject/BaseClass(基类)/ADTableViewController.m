@@ -7,7 +7,6 @@
 //
 
 #import "ADTableViewController.h"
-#import "NoDataView.h"
 
 
 @interface ADTableViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -23,7 +22,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.currentPageNum = 1; // 默认第一页
-    [NoDataView nodataViewWithTitle:@"暂无数据" superView:self.tableView changeObject:self.kvoArr keyPath:@"array"];
+//    [NoDataView nodataViewWithTitle:@"暂无数据" superView:self.tableView changeObject:self.kvoArr keyPath:@"array"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -110,7 +109,7 @@
 - (UITableView *)tableView
 {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ScreenW, ScreenH) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;

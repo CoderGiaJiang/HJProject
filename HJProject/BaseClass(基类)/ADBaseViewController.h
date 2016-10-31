@@ -22,7 +22,7 @@
  *  @param name     通知名字
  *  @param recetive 接收通知回调
  */
-- (void)ad_addNotificationCenterWithName:(NSString *)name recetive:(ADNoticationBlock)recetive;
+- (void)ad_addNotificationCenterWithName:(NSString *)name recetive:(HJNoticationBlock)recetive;
 
 /**
  *  根据名字删除通知
@@ -42,19 +42,19 @@
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openCameraCompletion:(ADImageBlcok)completion;
+- (void)ad_openCameraCompletion:(HJImageBlcok)completion;
 
 /**
  *  打开系统相册
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openAlbumCompletion:(ADImageBlcok)completion;
+- (void)ad_openAlbumCompletion:(HJImageBlcok)completion;
 
 /**
  *  保存图片到相册
  */
-- (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(ADCompletionBlcok)completion;
+- (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion;
 
 #pragma mark - MJRefesh
 

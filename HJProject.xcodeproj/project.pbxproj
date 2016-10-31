@@ -25,6 +25,7 @@
 		CE849FF91DB5CFB600F9350B /* UIView+IB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE849FF81DB5CFB600F9350B /* UIView+IB.m */; };
 		CE849FFC1DB5D07100F9350B /* HJToolsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE849FFB1DB5D07100F9350B /* HJToolsKit.m */; };
 		CE99A9D11DC721BF006343CA /* Instruction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99A9CE1DC721BF006343CA /* Instruction.m */; };
+		CE99A9D41DC731A1006343CA /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99A9D31DC731A1006343CA /* NoDataView.m */; };
 		CEAAB97C1DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9771DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m */; };
 		CEAAB97D1DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9791DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m */; };
 		CEAAB97E1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB97B1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m */; };
@@ -56,6 +57,7 @@
 		CEFE79C61DAB458400E67B94 /* NSString+HJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE79C51DAB458400E67B94 /* NSString+HJExtension.m */; };
 		CEFE79C91DAB49E600E67B94 /* NSObject+HJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CEFE79C81DAB49E600E67B94 /* NSObject+HJExtension.m */; };
 		CEFEE2961D95114E009A33DC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFEE2951D95114E009A33DC /* SystemConfiguration.framework */; };
+		EBC4E0DB44E24EC7981E7BB9 /* libPods-HJProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2867B05B3382F1DF4DAE108 /* libPods-HJProject.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3542D89C023ED724855A0154 /* Pods-HJProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-HJProject/Pods-HJProject.release.xcconfig"; sourceTree = "<group>"; };
+		52F379EC33F6BA69F8616FE5 /* Pods-HJProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJProject/Pods-HJProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0A81AF1D9376BE00C4F876 /* HJProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0A81B31D9376BE00C4F876 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE0A81B51D9376BE00C4F876 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +114,8 @@
 		CE99A9CE1DC721BF006343CA /* Instruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instruction.m; sourceTree = "<group>"; };
 		CE99A9CF1DC721BF006343CA /* Podfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podfile.h; sourceTree = "<group>"; };
 		CE99A9D01DC721BF006343CA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE99A9D21DC731A1006343CA /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
+		CE99A9D31DC731A1006343CA /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
 		CEAAB9761DACB462007ABC70 /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		CEAAB9771DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		CEAAB9781DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
@@ -171,6 +177,7 @@
 		CEFE79C71DAB49E600E67B94 /* NSObject+HJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HJExtension.h"; sourceTree = "<group>"; };
 		CEFE79C81DAB49E600E67B94 /* NSObject+HJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HJExtension.m"; sourceTree = "<group>"; };
 		CEFEE2951D95114E009A33DC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F2867B05B3382F1DF4DAE108 /* libPods-HJProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HJProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEFEE2961D95114E009A33DC /* SystemConfiguration.framework in Frameworks */,
+				EBC4E0DB44E24EC7981E7BB9 /* libPods-HJProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +215,7 @@
 				CE0A81D61D9376BE00C4F876 /* HJProjectUITests */,
 				CE0A81B01D9376BE00C4F876 /* Products */,
 				CEFEE2941D95114E009A33DC /* Frameworks */,
+				F69D6399C86A7A308AA2A064 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -372,6 +381,8 @@
 				CEAAF58D1DAB951400D3E228 /* AppDelegate+ADExtension.m */,
 				CEAAF58E1DAB951400D3E228 /* HYBTextView.h */,
 				CEAAF58F1DAB951400D3E228 /* HYBTextView.m */,
+				CE99A9D21DC731A1006343CA /* NoDataView.h */,
+				CE99A9D31DC731A1006343CA /* NoDataView.m */,
 			);
 			name = "Other(待处理)";
 			path = Other;
@@ -457,8 +468,18 @@
 			isa = PBXGroup;
 			children = (
 				CEFEE2951D95114E009A33DC /* SystemConfiguration.framework */,
+				F2867B05B3382F1DF4DAE108 /* libPods-HJProject.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F69D6399C86A7A308AA2A064 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52F379EC33F6BA69F8616FE5 /* Pods-HJProject.debug.xcconfig */,
+				3542D89C023ED724855A0154 /* Pods-HJProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -468,9 +489,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE0A81DC1D9376BE00C4F876 /* Build configuration list for PBXNativeTarget "HJProject" */;
 			buildPhases = (
+				CBF880F9E57D93464123DB2D /* [CP] Check Pods Manifest.lock */,
 				CE0A81AB1D9376BE00C4F876 /* Sources */,
 				CE0A81AC1D9376BE00C4F876 /* Frameworks */,
 				CE0A81AD1D9376BE00C4F876 /* Resources */,
+				35627F493E44915728A51ECC /* [CP] Embed Pods Frameworks */,
+				EBF637E23DA70DD205C77A40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -596,6 +620,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35627F493E44915728A51ECC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJProject/Pods-HJProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF880F9E57D93464123DB2D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EBF637E23DA70DD205C77A40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HJProject/Pods-HJProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE0A81AB1D9376BE00C4F876 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -610,6 +682,7 @@
 				CEAAB99B1DACBA6E007ABC70 /* HJNavigationController.m in Sources */,
 				CEAAF56F1DAB62C400D3E228 /* UIImage+HJExtension.m in Sources */,
 				CE23377C1D93AD080041C3B4 /* HJCoreLocationManager.m in Sources */,
+				CE99A9D41DC731A1006343CA /* NoDataView.m in Sources */,
 				CEAAF5871DAB90B700D3E228 /* UIButton+HJExtension.m in Sources */,
 				CEFE79C01DAB438300E67B94 /* NSDictionary+HJExtension.m in Sources */,
 				CE2337751D93AB680041C3B4 /* HJGuideView.m in Sources */,
@@ -784,11 +857,12 @@
 		};
 		CE0A81DD1D9376BE00C4F876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52F379EC33F6BA69F8616FE5 /* Pods-HJProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3F75DVJMK6;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/HJProject/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HJProject/H(头文件)/PrefixHeader.pch";
 				INFOPLIST_FILE = HJProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -799,11 +873,12 @@
 		};
 		CE0A81DE1D9376BE00C4F876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3542D89C023ED724855A0154 /* Pods-HJProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 3F75DVJMK6;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/HJProject/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HJProject/H(头文件)/PrefixHeader.pch";
 				INFOPLIST_FILE = HJProject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -27,6 +27,10 @@ typedef void(^HJSegmentBlock)(UISegmentedControl *sender);
 typedef void(^HJNSStringBlock)(NSString *string);
 typedef void(^HJNSArrayBlock)(NSArray *arr);
 
+// Cocoapods
+#import <Masonry.h>
+#import <MJRefresh.h>
+
 //#import "UIView+ADExtension.h"
 //#import "UIBarButtonItem+ADExtension.h"
 //#import "UINavigationBar+ADExtension.h"
@@ -52,7 +56,6 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 //#import <UIScrollView+SVPullToRefresh.h>
 //#import <UIScrollView+SVInfiniteScrolling.h>
 //#import <Masonry.h>
-////#import "ADGifFootRefresh.h"
 ////#import "ADGifHeaderRefresh.h"
 //#import "ADBaseViewController.h"
 //#import "ADCoreLocationManager.h"

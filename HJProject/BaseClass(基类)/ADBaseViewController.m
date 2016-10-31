@@ -7,8 +7,6 @@
 //
 
 #import "ADBaseViewController.h"
-#import "GifFootRefresh.h"
-#import "GifHeaderRefresh.h"
 
 @interface ADBaseViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
@@ -63,7 +61,7 @@
  *  @param name     通知名字
  *  @param recetive 接收通知回调
  */
-- (void)ad_addNotificationCenterWithName:(NSString *)name recetive:(ADNoticationBlock)recetive
+- (void)ad_addNotificationCenterWithName:(NSString *)name recetive:(HJNoticationBlock)recetive
 {
     if ([self.notifiNameArr containsObject:name]) {
         return;
@@ -78,7 +76,7 @@
 - (void)ad_executeNotificationMethod:(NSNotification *)notification
 {
     for (NSString *name in self.notifiNameArr) {
-        ADNoticationBlock block = objc_getAssociatedObject(self, (__bridge const void *)(name));
+        HJNoticationBlock block = objc_getAssociatedObject(self, (__bridge const void *)(name));
         if (block) {
             block(notification);
         }
@@ -118,7 +116,7 @@
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openCameraCompletion:(ADImageBlcok)completion
+- (void)ad_openCameraCompletion:(HJImageBlcok)completion
 {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
@@ -135,7 +133,7 @@
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openAlbumCompletion:(ADImageBlcok)completion
+- (void)ad_openAlbumCompletion:(HJImageBlcok)completion
 {
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     [imagePickerController setDelegate:self];
@@ -149,7 +147,7 @@
 /**
  *  保存图片到相册
  */
-- (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(ADCompletionBlcok)completion
+- (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion
 {
     UIImageWriteToSavedPhotosAlbum(image, self, @selector(ad_image:didFinishSavingWithError:contextInfo:), NULL);
     
@@ -173,7 +171,7 @@
     }
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示" message:msg preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *alertAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
-        ADCompletionBlcok block = objc_getAssociatedObject(self, (__bridge const void *)(image));
+        HJCompletionBlcok block = objc_getAssociatedObject(self, (__bridge const void *)(image));
         if (block) {
             block();
         }
@@ -189,7 +187,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info
 {
     UIImage *image = info[UIImagePickerControllerEditedImage];
-    ADImageBlcok block = objc_getAssociatedObject(self, (__bridge const void *)(picker));
+    HJImageBlcok block = objc_getAssociatedObject(self, (__bridge const void *)(picker));
     if (block) {
         block(image);
     }

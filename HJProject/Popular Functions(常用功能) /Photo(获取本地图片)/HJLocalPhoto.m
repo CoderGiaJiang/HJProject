@@ -27,7 +27,7 @@
     UIAlertAction *albumAction = [UIAlertAction actionWithTitle:@"相册" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self hj_openAlbumWithViewController:viewController completion:^(UIImage *image) {
             // 压缩图片
-            UIImage *resizedImage = [image resizedImageToFitInSize:CGSizeMake(120.0, 120.0) scaleIfSmaller:NO];
+            UIImage *resizedImage = [image hj_compressImageWithCompressionQuality:0.5 scaleToSize:CGSizeMake(120.0, 120.0)];
             if (completion) {
                 completion(resizedImage);
             }
@@ -36,7 +36,7 @@
     UIAlertAction *camareAction = [UIAlertAction actionWithTitle:@"拍照" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
         [self hj_openCameraWithViewController:viewController completion:^(UIImage *image) {
             // 压缩图片
-            UIImage *resizedImage = [image resizedImageToFitInSize:CGSizeMake(120.0, 120.0) scaleIfSmaller:NO];
+            UIImage *resizedImage = [image hj_compressImageWithCompressionQuality:0.5 scaleToSize:CGSizeMake(120.0, 120.0)];
             if (completion) {
                 completion(resizedImage);
             }
