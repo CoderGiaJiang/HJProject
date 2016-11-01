@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "HJProject"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "HJProject"
   s.description  = <<-DESC
                       Podspec test 
