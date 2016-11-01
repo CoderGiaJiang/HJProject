@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/CoderGiaJiang/HJProject.git", :tag => "0.0.2" }
   s.source_files  = "HJProject/**/*.{h,m}"
-  s.public_header_files = 'HJProject/H(头文件)/Header.h'
+  s.public_header_files = 'HJProject/H\(头文件\)/Header.h'
   s.requires_arc = true
 
 end
