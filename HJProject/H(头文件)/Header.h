@@ -1,16 +1,19 @@
 //
-//  PrefixHeader.pch
-//  NormalAppFramework-noVersionInfo.
+//  Header.h
+//  HJProject
 //
-//  Created by AdwardWang on 16/7/12.
-//  Copyright © 2016年 AdwardWang. All rights reserved.
+//  Created by User on 16/10/10.
+//  Copyright © 2016年 Dellidc. All rights reserved.
 //
 
-#ifndef PrefixHeader_pch
-#define PrefixHeader_pch
+#ifndef Header_h
+#define Header_h
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+// pod 'SGNetObserver', '~> 1.0.0' // 网络状态判断工具
+
+#endif /* Header_h */
+
 
 #import <UIKit/UIKit.h>
 
@@ -96,7 +99,7 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 #define GETUI_CID @"getuiCid"
 #define PUSHON @"pushon"
 #define USERNAME @"username"
-  
+
 //test
 #define xiaocaiServerurl @"http://192.168.1.11"
 //distribution
@@ -242,16 +245,12 @@ return _instance; \
 //$error_code[50002] = '暂无数据';
 //$error_code[50003] = '其他错误';
 //$error_code[50004] = '未知错误';
-// 
+//
 //$error_code[51001] = '需要GET请求';
 //$error_code[51002] = '需要POST请求';
 //$error_code[51003] = '需要HTTPS请求';
-// 
+//
 //$error_code[52001] = '数据库查询错误';
 //$error_code[52002] = '数据库添加错误';
 //$error_code[52003] = '数据库更新错误';
 //$error_code[52004] = '数据库删除错误';
-
-
-
-#endif /* PrefixHeader_pch */

@@ -112,10 +112,10 @@
 		CE849FFB1DB5D07100F9350B /* HJToolsKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJToolsKit.m; sourceTree = "<group>"; };
 		CE99A9CD1DC721BF006343CA /* Instruction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Instruction.h; sourceTree = "<group>"; };
 		CE99A9CE1DC721BF006343CA /* Instruction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Instruction.m; sourceTree = "<group>"; };
-		CE99A9CF1DC721BF006343CA /* Podfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Podfile.h; sourceTree = "<group>"; };
-		CE99A9D01DC721BF006343CA /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CE99A9CF1DC721BF006343CA /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		CE99A9D21DC731A1006343CA /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
 		CE99A9D31DC731A1006343CA /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
+		CEA2A19B1DC822CA001336C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		CEAAB9761DACB462007ABC70 /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		CEAAB9771DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		CEAAB9781DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
@@ -244,6 +244,7 @@
 				CE0A81B61D9376BE00C4F876 /* AppDelegate.m */,
 				CE0A81B81D9376BE00C4F876 /* ViewController.h */,
 				CE0A81B91D9376BE00C4F876 /* ViewController.m */,
+				CEA2A19B1DC822CA001336C1 /* PrefixHeader.pch */,
 				CE0A81BB1D9376BE00C4F876 /* Main.storyboard */,
 				CE0A81BE1D9376BE00C4F876 /* Assets.xcassets */,
 				CE0A81C01D9376BE00C4F876 /* LaunchScreen.storyboard */,
@@ -331,8 +332,7 @@
 			children = (
 				CE99A9CD1DC721BF006343CA /* Instruction.h */,
 				CE99A9CE1DC721BF006343CA /* Instruction.m */,
-				CE99A9CF1DC721BF006343CA /* Podfile.h */,
-				CE99A9D01DC721BF006343CA /* PrefixHeader.pch */,
+				CE99A9CF1DC721BF006343CA /* Header.h */,
 			);
 			path = "H(头文件)";
 			sourceTree = "<group>";
