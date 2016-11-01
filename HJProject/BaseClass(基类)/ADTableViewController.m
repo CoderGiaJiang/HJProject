@@ -7,6 +7,8 @@
 //
 
 #import "ADTableViewController.h"
+#import <MJRefresh.h>
+#import <objc/runtime.h>
 
 
 @interface ADTableViewController ()<UITableViewDelegate, UITableViewDataSource>
