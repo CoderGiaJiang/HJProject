@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios
   s.source       = { :git => "https://github.com/CoderGiaJiang/HJProject.git", :tag => "0.0.1" }
   s.prefix_header_file = 'HJProject/PrefixHeader.pch'
-  s.source_files  = "HJProject/**/*.{h,m}"
+  s.source_files  = "HJProject/**/*.{h,m}";"Pods/"
   s.dependency "Masonry"
   s.dependency "MJRefresh"
   s.requires_arc = true
