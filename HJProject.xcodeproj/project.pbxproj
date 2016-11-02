@@ -26,6 +26,7 @@
 		CE849FFC1DB5D07100F9350B /* HJToolsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE849FFB1DB5D07100F9350B /* HJToolsKit.m */; };
 		CE99A9D11DC721BF006343CA /* Instruction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99A9CE1DC721BF006343CA /* Instruction.m */; };
 		CE99A9D41DC731A1006343CA /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99A9D31DC731A1006343CA /* NoDataView.m */; };
+		CEA2A1DD1DC89074001336C1 /* CommonConst.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA2A1DC1DC89074001336C1 /* CommonConst.m */; };
 		CEAAB97C1DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9771DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m */; };
 		CEAAB97D1DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9791DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m */; };
 		CEAAB97E1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB97B1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m */; };
@@ -116,6 +117,8 @@
 		CE99A9D21DC731A1006343CA /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
 		CE99A9D31DC731A1006343CA /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
 		CEA2A19B1DC822CA001336C1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		CEA2A1DB1DC89073001336C1 /* CommonConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonConst.h; sourceTree = "<group>"; };
+		CEA2A1DC1DC89074001336C1 /* CommonConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonConst.m; sourceTree = "<group>"; };
 		CEAAB9761DACB462007ABC70 /* NSArray+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
 		CEAAB9771DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		CEAAB9781DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HYBUnicodeReadable.h"; sourceTree = "<group>"; };
@@ -333,6 +336,8 @@
 				CE99A9CD1DC721BF006343CA /* Instruction.h */,
 				CE99A9CE1DC721BF006343CA /* Instruction.m */,
 				CE99A9CF1DC721BF006343CA /* Header.h */,
+				CEA2A1DB1DC89073001336C1 /* CommonConst.h */,
+				CEA2A1DC1DC89074001336C1 /* CommonConst.m */,
 			);
 			path = "H(头文件)";
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 				CEAAF5781DAB65CA00D3E228 /* UIView+HJExtension.m in Sources */,
 				CEAAB99B1DACBA6E007ABC70 /* HJNavigationController.m in Sources */,
 				CEAAF56F1DAB62C400D3E228 /* UIImage+HJExtension.m in Sources */,
+				CEA2A1DD1DC89074001336C1 /* CommonConst.m in Sources */,
 				CE23377C1D93AD080041C3B4 /* HJCoreLocationManager.m in Sources */,
 				CE99A9D41DC731A1006343CA /* NoDataView.m in Sources */,
 				CEAAF5871DAB90B700D3E228 /* UIButton+HJExtension.m in Sources */,

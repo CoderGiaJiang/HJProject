@@ -15,6 +15,10 @@
 #import "Header.h"
 
 
+/*********** App 迭代开发版原则 ***********/
+//1.Bug修复或者优化功能, 只修改叠加第三位数字，其他不变
+//2.增加了一个新功能, 叠加修改第二位数字, 并清空第三位数字为0
+//3.App需求功能大改, 更新量非常大, 需要叠加修改第一位数字, 清空其他数字为0
 
 
 #import <UIKit/UIKit.h>
@@ -93,31 +97,53 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 
 #import "Category.h"
 
-#define  STATUS_COMPANY_ARRAY  @"CompanyClientStatusArray"
-#define  STATUS_PERSONAL_ARRAY @"PersonClientStatusArray"
+#import "CommonConst.h"
 
-#define SLECTED_TABBAR_PERSONAL_NOTIFICATION @"SLECTED_TABBAR_PERSONAL_NOTIFICATION"
-#define UD_DEVICE_TOKEN @"DeviceToken"
-#define GETUI_CID @"getuiCid"
-#define PUSHON @"pushon"
-#define USERNAME @"username"
+#define BASEURL [NSString stringWithFormat:@"http://%@/dellcrm/index.php/Api/", SERVERURL]
+#define IMAGEUPLOADURL [NSString stringWithFormat:@"http://%@/dellcrm/index.php/Api/Index/uploadImg", SERVERURL]
+#define TESTIMG_HEADER_URL  [NSString stringWithFormat:@"http://%@/dellcrm/Public/Uploads/", SERVERURL]
 
-//test
-#define xiaocaiServerurl @"http://192.168.1.11"
-//distribution
-#define distributionServerurl @"http://183.2.185.89"
-//production
-#define productionTest @"http://14.29.114.85"
+// @# 在变量前加，可令字符串省去加 @""
 
-#define SERVERURL productionTest
+//获取temp
+#define kPathTemp NSTemporaryDirectory()
 
-#define BASEURL [NSString stringWithFormat:@"%@/dellcrm/index.php/Api/", SERVERURL]
-#define IMAGEUPLOADURL [NSString stringWithFormat:@"%@/dellcrm/index.php/Api/Index/uploadImg", SERVERURL]
-#define TESTIMG_HEADER_URL  [NSString stringWithFormat:@"%@/dellcrm/Public/Uploads/", SERVERURL]
+//获取沙盒 Document
+#define kPathDocument [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]
 
+//获取沙盒 Cache
+#define kPathCache [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
-/*! weak */
-#define AD_Weak  __weak __typeof(self) weakSelf = self
+// ARC 和 MRC
+#if __has_feature(objc_arc)
+// ARC
+#else
+// MRC
+#endif
+
+// 获取图片
+#define IMAGE(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+// 获取当前语言
+#define CURRENT_LANGUAGES ([[NSLocale preferredLanguages] objectAtIndex:0])
+
+// 判断是不是iOS系统，如果是iOS系统在真机和模拟器输出都是YES
+#if TARGET_OS_IPHONE
+#endif
+
+#if (TARGET_IPHONE_SIMULATOR)
+// 在模拟器的情况下
+#else
+// 在真机情况下
+#endif
+
+// 角度（Degrees） 和 弧度（Radian） 转换
+#define DEGREES_TO_RADIAN(x) (M_PI * (x) / 180.0)
+#define RADIAN_TO_DEGREES(radian) (radian*180.0)/(M_PI)
+
+// 弱引用 和 强引用
+#define WEAK(oject)  __weak typeof(oject) weak##type = oject;
+#define STRONG(oject)  __strong typeof(oject) oject = weak##oject;
 
 /*** 日志 ***/
 #ifdef DEBUG
@@ -157,7 +183,6 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 
 
 /**** 手机设备 ****/
-#define IS_IPHONE ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
 #define IS_IPHONE_4_OR_LESS (IS_IPHONE && ScreenH < 568.0)
 #define IS_IPHONE_5 (IS_IPHONE && ScreenH == 568.0)
 #define IS_IPHONE_5_OR_LESS (IS_IPHONE_5 || IS_IPHONE_4_OR_LESS)
@@ -166,12 +191,24 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 #define IS_IPHONE_6_LATER (IS_IPHONE && ScreenH > 667.0)
 #define IS_IPHONE_6P (IS_IPHONE && ScreenH == 736.0)
 
+//判断是否为iPhone
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+
+//判断是否为iPad
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+//判断是否为ipod
+#define IS_IPOD ([[[UIDevice currentDevice] model] isEqualToString:@"iPod touch"])
+
+// 判断是否为 iPhone 5SE
+#define iPhone5SE [[UIScreen mainScreen] bounds].size.width == 320.0f && [[UIScreen mainScreen] bounds].size.height == 568.0f
+
 
 /**** iOS 版本 ****/
 #define IOS7_OR_LATER (floorf(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_6_1)
 #define IOS8_OR_LATER (floorf(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1)
 
-/** 获取sharedApplication */
+#define IOS_SYSTEM_STRING [[UIDevice currentDevice] systemVersion]
 
 
 static inline BOOL isEmpty(id thing) {
@@ -223,39 +260,24 @@ return _instance; \
 #define STORYBOARD [UIStoryboard storyboardWithName:@"Main" bundle:nil]
 #define APPLICATION [UIApplication sharedApplication]
 
-// Weak
-#define WEAK(object) __weak typeof (object) weak##object = object;
 
 // 延时
 #define DELEAY(time, block) dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(time * NSEC_PER_SEC)), dispatch_get_main_queue(), block);
 
-// 回到主线程
-#define MAIN_THREAD(block)  dispatch_async(dispatch_get_main_queue(), ^{block});
+// GCD
+//GCD - 一次性执行
+#define DISPATCH_ONCE_BLOCK(onceBlock) static dispatch_once_t onceToken; dispatch_once(&onceToken, onceBlock);
+
+//GCD - 在Main线程上运行
+#define DISPATCH_MAIN_THREAD(mainQueueBlock) dispatch_async(dispatch_get_main_queue(), mainQueueBlock);
+
+//GCD - 开启异步线程
+#define DISPATCH_GLOBAL_QUEUE_DEFAULT(globalQueueBlock) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), globalQueueBlock);
 
 // 随机数
 #define RANDOM(MIN, MAX) (arc4random()%((MAX) - (MIN) + 1) + (MIN))
 
-#define YEAY_MONTH_DAY_HOUR_MIN_SEC @"yyyy-MM-dd HH:mm:ss"
-#define YEAY_MONTH_DAY_HOUR_MIN @"yyyy-MM-dd HH:mm"
-#define YEAY_MONTH_DAY @"yyyy-MM-dd"
 
-#define CODE_SUCCESS 0
-#define CODE_NODATA  50002
-//
-//$error_code[0] = '成功';
-//$error_code[50001] = '参数错误';
-//$error_code[50002] = '暂无数据';
-//$error_code[50003] = '其他错误';
-//$error_code[50004] = '未知错误';
-//
-//$error_code[51001] = '需要GET请求';
-//$error_code[51002] = '需要POST请求';
-//$error_code[51003] = '需要HTTPS请求';
-//
-//$error_code[52001] = '数据库查询错误';
-//$error_code[52002] = '数据库添加错误';
-//$error_code[52003] = '数据库更新错误';
-//$error_code[52004] = '数据库删除错误';
 
 
 #endif /* PrefixHeader_pch */
