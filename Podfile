@@ -1,4 +1,4 @@
-platform :ios, ‘8.0’
+platform :ios, ‘8.2’
 target “HJProject” do
 pod 'Masonry'
 pod 'MJRefresh'
