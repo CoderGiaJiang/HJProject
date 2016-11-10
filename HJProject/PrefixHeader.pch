@@ -12,6 +12,7 @@
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
+#import <UIKit/UIKit.h>
 #import "Header.h"
 
 
@@ -20,21 +21,8 @@
 //2.增加了一个新功能, 叠加修改第二位数字, 并清空第三位数字为0
 //3.App需求功能大改, 更新量非常大, 需要叠加修改第一位数字, 清空其他数字为0
 
-
-#import <UIKit/UIKit.h>
-
-typedef void(^HJNoticationBlock)(NSNotification *notification);
-typedef void(^HJImageBlcok)(UIImage *image);
-typedef void(^HJImageViewBlcok)(UIImageView *imageView);
-typedef void(^HJControlBlcok)(UIControl *sender);
-typedef void(^HJTapGestuerBlcok)(UITapGestureRecognizer *tapGesture);
-typedef void(^HJCompletionBlcok)(void);
-typedef void(^HJCancelBlock)(void);
-typedef void(^HJButtonBlock)(UIButton *sender);
-typedef void(^HJBarBtnBlock)(UIBarButtonItem *sender);
-typedef void(^HJSegmentBlock)(UISegmentedControl *sender);
-typedef void(^HJNSStringBlock)(NSString *string);
-typedef void(^HJNSArrayBlock)(NSArray *arr);
+#import <objc/runtime.h>
+#import <objc/objc.h>
 
 // Cocoapods
 #import "Masonry.h"
@@ -66,7 +54,7 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 //#import <UIScrollView+SVInfiniteScrolling.h>
 //#import <Masonry.h>
 ////#import "ADGifHeaderRefresh.h"
-//#import "ADBaseViewController.h"
+#import "ADBaseViewController.h"
 //#import "ADCoreLocationManager.h"
 //#import "ADTableViewController.h"
 //#import "ADStaticTableViewController.h"
@@ -80,8 +68,7 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 //#import "MJRefresh.h"
 //#import "UIImage+GIF.h"
 //
-#import <objc/runtime.h>
-#import <objc/objc.h>
+
 //#import <MJExtension.h>
 //#import <SVProgressHUD.h>
 //#import <UIImageView+WebCache.h>
@@ -98,6 +85,7 @@ typedef void(^HJNSArrayBlock)(NSArray *arr);
 #import "Category.h"
 
 #import "CommonConst.h"
+
 
 #define BASEURL [NSString stringWithFormat:@"http://%@/dellcrm/index.php/Api/", SERVERURL]
 #define IMAGEUPLOADURL [NSString stringWithFormat:@"http://%@/dellcrm/index.php/Api/Index/uploadImg", SERVERURL]

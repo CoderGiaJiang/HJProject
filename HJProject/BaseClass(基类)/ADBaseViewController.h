@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Header.h"
 
 @interface ADBaseViewController : UIViewController
 

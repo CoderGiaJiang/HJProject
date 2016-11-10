@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Header.h"
 
 @interface HJLocalPhoto : NSObject
 
