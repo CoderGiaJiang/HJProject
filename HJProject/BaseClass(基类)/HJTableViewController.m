@@ -1,21 +1,21 @@
 //
-//  ADTableViewController.m
+//  HJTableViewController.m
 //  CRM
 //
 //  Created by User on 16/8/10.
 //  Copyright © 2016年 Dellidc. All rights reserved.
 //
 
-#import "ADTableViewController.h"
+#import "HJTableViewController.h"
 
 
-@interface ADTableViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface HJTableViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) KVOArray *kvoArr;
 
 @end
 
-@implementation ADTableViewController
+@implementation HJTableViewController
 
 
 - (void)viewDidLoad {

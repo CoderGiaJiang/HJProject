@@ -240,7 +240,7 @@ static void * deallocHasSwizzledKey = "deallocHasSwizzledKey";
 }
 
 - (dispatch_semaphore_t)_xw_getSemaphoreWithKey:(void *)key{
-    dispatch_semaphore_t semaphore = (__bridge dispatch_semaphore_t)(objc_getAssociatedObject(self, key)); 
+    dispatch_semaphore_t semaphore = (__bridge dispatch_semaphore_t)(objc_getAssociatedObject(self, key));
     if (!semaphore) {
         semaphore = dispatch_semaphore_create(1);
     }

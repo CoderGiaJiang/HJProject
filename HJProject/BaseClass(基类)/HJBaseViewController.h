@@ -1,5 +1,5 @@
 //
-//  ADBaseViewController.h
+//  HJBaseViewController.h
 //  NormalAppFramework-noVersionInfo.
 //
 //  Created by User on 16/7/18.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Header.h"
 
-@interface ADBaseViewController : UIViewController
+@interface HJBaseViewController : UIViewController
 
 @property (nonatomic, assign) BOOL isStatusBarHidden; // 是否隐藏状态栏, 默认是NO
 @property (nonatomic, assign) BOOL isTopBarNightMode; // 是否设置状态栏和导航栏为夜间模式，默认是NO (当设置了 backgroundImage 时，只会改变状态栏文字颜色)
@@ -23,19 +22,19 @@
  *  @param name     通知名字
  *  @param recetive 接收通知回调
  */
-- (void)ad_addNotificationCenterWithName:(NSString *)name recetive:(HJNoticationBlock)recetive;
+- (void)hj_addNotificationCenterWithName:(NSString *)name recetive:(HJNoticationBlock)recetive;
 
 /**
  *  根据名字删除通知
  *
  *  @param name 通知名字
  */
-- (void)ad_removeNotificationWithName:(NSString *)name;
+- (void)hj_removeNotificationWithName:(NSString *)name;
 
 /**
  *  移除所有通知
  */
-- (void)ad_removeAllNotification;
+- (void)hj_removeAllNotification;
 
 #pragma mark - ImagePickerController Method
 /**
@@ -43,19 +42,19 @@
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openCameraCompletion:(HJImageBlcok)completion;
+- (void)hj_openCameraCompletion:(HJImageBlcok)completion;
 
 /**
  *  打开系统相册
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openAlbumCompletion:(HJImageBlcok)completion;
+- (void)hj_openAlbumCompletion:(HJImageBlcok)completion;
 
 /**
  *  保存图片到相册
  */
-- (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion;
+- (void)hj_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion;
 
 //#pragma mark - MJRefesh
 //

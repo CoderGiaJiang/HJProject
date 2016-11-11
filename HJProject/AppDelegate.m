@@ -23,7 +23,7 @@
     self.window = [[UIWindow alloc]initWithFrame:SCREEN_BOUNDS];
     [self.window makeKeyAndVisible];
     self.window.rootViewController = rootViewController;
-    [HJGuideView hj_guideWithImageNameArr:@[@"1", @"2", @"3", @"4"] viewController:rootViewController firstOpen:[self hj_applicationFirstOpen]];
+    [HJGuideView hj_guideWithImageNameArr:@[@"1", @"2", @"3", @"4"] viewController:rootViewController firstOpen:[HJToolsKit hj_applicationFirstOpen]];
     return YES;
 }
 

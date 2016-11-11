@@ -17,4 +17,11 @@
  */
 + (UIViewController*)hj_getTopViewController;
 
+/**
+ 判断是否为第一次打开APP
+ 
+ @return YES OR NO
+ */
++ (BOOL)hj_applicationFirstOpen;
+
 @end

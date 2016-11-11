@@ -7,6 +7,7 @@
 //
 
 #import "HJGuideView.h"
+#import "Header.h"
 
 @interface HJGuideView ()<UIScrollViewDelegate>
 
@@ -38,7 +39,7 @@
         return;
     }
     HJGuideView *guideView = [HJGuideView new];
-    guideView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
+    guideView.frame = CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_WIDTH);
     guideView.imageArray = @[@"1",@"2", @"3",@"4"].mutableCopy;
     [viewController.view addSubview:guideView];
     

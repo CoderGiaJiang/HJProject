@@ -8,6 +8,7 @@
 //
 
 #import "UIControl+HJExtension.h"
+
 static char valueChangeActionKey;
 
 @implementation UIControl (HJExtension)

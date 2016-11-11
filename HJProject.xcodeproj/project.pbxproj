@@ -8,20 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		CE0A81B41D9376BE00C4F876 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A81B31D9376BE00C4F876 /* main.m */; };
-		CE0A81B71D9376BE00C4F876 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A81B61D9376BE00C4F876 /* AppDelegate.m */; };
 		CE0A81BA1D9376BE00C4F876 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A81B91D9376BE00C4F876 /* ViewController.m */; };
 		CE0A81BD1D9376BE00C4F876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A81BB1D9376BE00C4F876 /* Main.storyboard */; };
 		CE0A81BF1D9376BE00C4F876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE0A81BE1D9376BE00C4F876 /* Assets.xcassets */; };
 		CE0A81C21D9376BE00C4F876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE0A81C01D9376BE00C4F876 /* LaunchScreen.storyboard */; };
 		CE0A81CD1D9376BE00C4F876 /* HJProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A81CC1D9376BE00C4F876 /* HJProjectTests.m */; };
 		CE0A81D81D9376BE00C4F876 /* HJProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE0A81D71D9376BE00C4F876 /* HJProjectUITests.m */; };
-		CE23375E1D938A3D0041C3B4 /* AppDelegate+HJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23375D1D938A3D0041C3B4 /* AppDelegate+HJExtension.m */; };
 		CE23376D1D93A7910041C3B4 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2337691D93A7910041C3B4 /* 1.png */; };
 		CE23376E1D93A7910041C3B4 /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = CE23376A1D93A7910041C3B4 /* 2.png */; };
 		CE23376F1D93A7910041C3B4 /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = CE23376B1D93A7910041C3B4 /* 3.png */; };
 		CE2337701D93A7910041C3B4 /* 4.png in Resources */ = {isa = PBXBuildFile; fileRef = CE23376C1D93A7910041C3B4 /* 4.png */; };
 		CE2337751D93AB680041C3B4 /* HJGuideView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2337741D93AB680041C3B4 /* HJGuideView.m */; };
 		CE23377C1D93AD080041C3B4 /* HJCoreLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE23377B1D93AD080041C3B4 /* HJCoreLocationManager.m */; };
+		CE45489A1DD56CD3006E3EDF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE4548991DD56CD3006E3EDF /* AppDelegate.m */; };
 		CE849FF91DB5CFB600F9350B /* UIView+IB.m in Sources */ = {isa = PBXBuildFile; fileRef = CE849FF81DB5CFB600F9350B /* UIView+IB.m */; };
 		CE849FFC1DB5D07100F9350B /* HJToolsKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE849FFB1DB5D07100F9350B /* HJToolsKit.m */; };
 		CE99A9D11DC721BF006343CA /* Instruction.m in Sources */ = {isa = PBXBuildFile; fileRef = CE99A9CE1DC721BF006343CA /* Instruction.m */; };
@@ -31,8 +30,8 @@
 		CEAAB97D1DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9791DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m */; };
 		CEAAB97E1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB97B1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m */; };
 		CEAAB9881DACB6E9007ABC70 /* KVOArray.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9871DACB6E9007ABC70 /* KVOArray.m */; };
-		CEAAB98E1DACB76A007ABC70 /* ADBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB98B1DACB76A007ABC70 /* ADBaseViewController.m */; };
-		CEAAB9951DACB778007ABC70 /* ADTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9931DACB778007ABC70 /* ADTableViewController.m */; };
+		CEAAB98E1DACB76A007ABC70 /* HJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB98B1DACB76A007ABC70 /* HJBaseViewController.m */; };
+		CEAAB9951DACB778007ABC70 /* HJTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9931DACB778007ABC70 /* HJTableViewController.m */; };
 		CEAAB9981DACB7B6007ABC70 /* HJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9971DACB7B6007ABC70 /* HJTabBarController.m */; };
 		CEAAB99B1DACBA6E007ABC70 /* HJNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB99A1DACBA6E007ABC70 /* HJNavigationController.m */; };
 		CEAAB9A21DACBC93007ABC70 /* HJLocalPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = CEAAB9A11DACBC93007ABC70 /* HJLocalPhoto.m */; };
@@ -84,8 +83,6 @@
 		52F379EC33F6BA69F8616FE5 /* Pods-HJProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HJProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HJProject/Pods-HJProject.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0A81AF1D9376BE00C4F876 /* HJProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HJProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0A81B31D9376BE00C4F876 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		CE0A81B51D9376BE00C4F876 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		CE0A81B61D9376BE00C4F876 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE0A81B81D9376BE00C4F876 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		CE0A81B91D9376BE00C4F876 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CE0A81BC1D9376BE00C4F876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -98,8 +95,6 @@
 		CE0A81D31D9376BE00C4F876 /* HJProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HJProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE0A81D71D9376BE00C4F876 /* HJProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HJProjectUITests.m; sourceTree = "<group>"; };
 		CE0A81D91D9376BE00C4F876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CE23375C1D938A3D0041C3B4 /* AppDelegate+HJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+HJExtension.h"; sourceTree = "<group>"; };
-		CE23375D1D938A3D0041C3B4 /* AppDelegate+HJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+HJExtension.m"; sourceTree = "<group>"; };
 		CE2337691D93A7910041C3B4 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		CE23376A1D93A7910041C3B4 /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
 		CE23376B1D93A7910041C3B4 /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
@@ -108,6 +103,8 @@
 		CE2337741D93AB680041C3B4 /* HJGuideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJGuideView.m; sourceTree = "<group>"; };
 		CE23377A1D93AD080041C3B4 /* HJCoreLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJCoreLocationManager.h; sourceTree = "<group>"; };
 		CE23377B1D93AD080041C3B4 /* HJCoreLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJCoreLocationManager.m; sourceTree = "<group>"; };
+		CE4548981DD56CD3006E3EDF /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE4548991DD56CD3006E3EDF /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE849FF71DB5CFB600F9350B /* UIView+IB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+IB.h"; sourceTree = "<group>"; };
 		CE849FF81DB5CFB600F9350B /* UIView+IB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+IB.m"; sourceTree = "<group>"; };
 		CE849FFA1DB5D07100F9350B /* HJToolsKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJToolsKit.h; sourceTree = "<group>"; };
@@ -128,10 +125,10 @@
 		CEAAB97B1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+HYBUnicodeReadable.m"; sourceTree = "<group>"; };
 		CEAAB9861DACB6E9007ABC70 /* KVOArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVOArray.h; sourceTree = "<group>"; };
 		CEAAB9871DACB6E9007ABC70 /* KVOArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVOArray.m; sourceTree = "<group>"; };
-		CEAAB98A1DACB76A007ABC70 /* ADBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBaseViewController.h; sourceTree = "<group>"; };
-		CEAAB98B1DACB76A007ABC70 /* ADBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADBaseViewController.m; sourceTree = "<group>"; };
-		CEAAB9921DACB778007ABC70 /* ADTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTableViewController.h; sourceTree = "<group>"; };
-		CEAAB9931DACB778007ABC70 /* ADTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTableViewController.m; sourceTree = "<group>"; };
+		CEAAB98A1DACB76A007ABC70 /* HJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJBaseViewController.h; sourceTree = "<group>"; };
+		CEAAB98B1DACB76A007ABC70 /* HJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJBaseViewController.m; sourceTree = "<group>"; };
+		CEAAB9921DACB778007ABC70 /* HJTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTableViewController.h; sourceTree = "<group>"; };
+		CEAAB9931DACB778007ABC70 /* HJTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTableViewController.m; sourceTree = "<group>"; };
 		CEAAB9961DACB7B6007ABC70 /* HJTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJTabBarController.h; sourceTree = "<group>"; };
 		CEAAB9971DACB7B6007ABC70 /* HJTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJTabBarController.m; sourceTree = "<group>"; };
 		CEAAB9991DACBA6E007ABC70 /* HJNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJNavigationController.h; sourceTree = "<group>"; };
@@ -243,13 +240,11 @@
 				CE23375F1D93A7460041C3B4 /* Reource(数据源) */,
 				CEFE79721DAB3FF100E67B94 /* Category(类目) */,
 				CE2337711D93AAE20041C3B4 /* Popular Functions(常用功能)  */,
-				CE23375C1D938A3D0041C3B4 /* AppDelegate+HJExtension.h */,
-				CE23375D1D938A3D0041C3B4 /* AppDelegate+HJExtension.m */,
-				CE0A81B51D9376BE00C4F876 /* AppDelegate.h */,
-				CE0A81B61D9376BE00C4F876 /* AppDelegate.m */,
 				CE0A81B81D9376BE00C4F876 /* ViewController.h */,
 				CE0A81B91D9376BE00C4F876 /* ViewController.m */,
 				CEA2A19B1DC822CA001336C1 /* PrefixHeader.pch */,
+				CE4548981DD56CD3006E3EDF /* AppDelegate.h */,
+				CE4548991DD56CD3006E3EDF /* AppDelegate.m */,
 				CE0A81BB1D9376BE00C4F876 /* Main.storyboard */,
 				CE0A81BE1D9376BE00C4F876 /* Assets.xcassets */,
 				CE0A81C01D9376BE00C4F876 /* LaunchScreen.storyboard */,
@@ -311,7 +306,8 @@
 				CE2337761D93ACA10041C3B4 /* Location(定位) */,
 				CE2337721D93AB680041C3B4 /* Guide Interface(引导界面) */,
 			);
-			path = "Popular Functions(常用功能) ";
+			name = "Popular Functions(常用功能) ";
+			path = "Popular Functions(常用功能)";
 			sourceTree = "<group>";
 		};
 		CE2337721D93AB680041C3B4 /* Guide Interface(引导界面) */ = {
@@ -365,10 +361,10 @@
 				CEAAB9971DACB7B6007ABC70 /* HJTabBarController.m */,
 				CEAAB9991DACBA6E007ABC70 /* HJNavigationController.h */,
 				CEAAB99A1DACBA6E007ABC70 /* HJNavigationController.m */,
-				CEAAB9921DACB778007ABC70 /* ADTableViewController.h */,
-				CEAAB9931DACB778007ABC70 /* ADTableViewController.m */,
-				CEAAB98A1DACB76A007ABC70 /* ADBaseViewController.h */,
-				CEAAB98B1DACB76A007ABC70 /* ADBaseViewController.m */,
+				CEAAB9921DACB778007ABC70 /* HJTableViewController.h */,
+				CEAAB9931DACB778007ABC70 /* HJTableViewController.m */,
+				CEAAB98A1DACB76A007ABC70 /* HJBaseViewController.h */,
+				CEAAB98B1DACB76A007ABC70 /* HJBaseViewController.m */,
 			);
 			path = "BaseClass(基类)";
 			sourceTree = "<group>";
@@ -684,7 +680,6 @@
 				CEAAB97E1DACB462007ABC70 /* NSSet+HYBUnicodeReadable.m in Sources */,
 				CEFE79BD1DAB42B500E67B94 /* NSDate+HJExtension.m in Sources */,
 				CEAAF57E1DAB6C0300D3E228 /* UIAlertController+HJExtension.m in Sources */,
-				CE23375E1D938A3D0041C3B4 /* AppDelegate+HJExtension.m in Sources */,
 				CEAAF5841DAB6FB400D3E228 /* UIControl+HJExtension.m in Sources */,
 				CEAAF5781DAB65CA00D3E228 /* UIView+HJExtension.m in Sources */,
 				CEAAB99B1DACBA6E007ABC70 /* HJNavigationController.m in Sources */,
@@ -701,16 +696,16 @@
 				CEFE79C91DAB49E600E67B94 /* NSObject+HJExtension.m in Sources */,
 				CE0A81BA1D9376BE00C4F876 /* ViewController.m in Sources */,
 				CEFE79C31DAB448800E67B94 /* NSMutableArray+HJExtension.m in Sources */,
+				CE45489A1DD56CD3006E3EDF /* AppDelegate.m in Sources */,
 				CEAAF5951DAB989700D3E228 /* Foundation+Log.m in Sources */,
 				CEAAB97D1DACB462007ABC70 /* NSDictionary+HYBUnicodeReadable.m in Sources */,
 				CEAAF58A1DAB917800D3E228 /* UIBarButtonItem+HJExtension.m in Sources */,
 				CEAAF5901DAB951400D3E228 /* AppDelegate+ADExtension.m in Sources */,
-				CEAAB98E1DACB76A007ABC70 /* ADBaseViewController.m in Sources */,
+				CEAAB98E1DACB76A007ABC70 /* HJBaseViewController.m in Sources */,
 				CEAAB9881DACB6E9007ABC70 /* KVOArray.m in Sources */,
 				CEAAB97C1DACB462007ABC70 /* NSArray+HYBUnicodeReadable.m in Sources */,
 				CE849FFC1DB5D07100F9350B /* HJToolsKit.m in Sources */,
 				CEAAF5751DAB64B900D3E228 /* UILabel+HJExtension.m in Sources */,
-				CE0A81B71D9376BE00C4F876 /* AppDelegate.m in Sources */,
 				CEFE79A41DAB403200E67B94 /* NSObject+XWAdd.m in Sources */,
 				CEFE79B11DAB403200E67B94 /* UISegmentedControl+HJExtension.m in Sources */,
 				CEAAF5721DAB63CE00D3E228 /* UIColor+HJExtension.m in Sources */,
@@ -721,7 +716,7 @@
 				CEAAF5811DAB6DA100D3E228 /* UIImageView+HJExtension.m in Sources */,
 				CEAAB9981DACB7B6007ABC70 /* HJTabBarController.m in Sources */,
 				CE99A9D11DC721BF006343CA /* Instruction.m in Sources */,
-				CEAAB9951DACB778007ABC70 /* ADTableViewController.m in Sources */,
+				CEAAB9951DACB778007ABC70 /* HJTableViewController.m in Sources */,
 				CEFE79BA1DAB411F00E67B94 /* NSArray+HJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

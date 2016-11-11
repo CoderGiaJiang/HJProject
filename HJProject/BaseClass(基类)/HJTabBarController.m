@@ -38,11 +38,12 @@
     // 设置 TabBarItem 文字偏移
     [[UITabBarItem appearance] setTitlePositionAdjustment:UIOffsetMake(0, -3)];
     // 设置 TabBar 颜色
-    self.tabBar.tintColor = THEMECOLOR;
+    self.tabBar.tintColor = kRGBAColor(1, 1, 1, 1);
     self.tabBar.barTintColor = [UIColor whiteColor];
     [self xw_addNotificationForName:SLECTED_TABBAR_PERSONAL_NOTIFICATION block:^(NSNotification * _Nonnull notification) {
         // 更新 TabBarController 的界面
     }];
+    
 }
 
 // 设置所有UITabBarItem的文字属性

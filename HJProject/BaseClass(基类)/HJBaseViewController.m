@@ -1,14 +1,15 @@
 //
-//  ADBaseViewController.m
+//  HJBaseViewController.m
 //  NormalAppFramework-noVersionInfo.
 //
 //  Created by User on 16/7/18.
 //  Copyright © 2016年 AdwardWang. All rights reserved.
 //
 
-#import "ADBaseViewController.h"
+#import "HJBaseViewController.h"
+#import "Header.h"
 
-@interface ADBaseViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+@interface HJBaseViewController ()<UINavigationControllerDelegate,UIImagePickerControllerDelegate>
 
 /**
  *  存放通知的数组
@@ -17,11 +18,11 @@
 
 @end
 
-@implementation ADBaseViewController
+@implementation HJBaseViewController
 
 - (void)dealloc
 {
-    [self ad_removeAllNotification];
+    [self hj_removeAllNotification];
 }
 
 
@@ -61,7 +62,7 @@
  *  @param name     通知名字
  *  @param recetive 接收通知回调
  */
-- (void)ad_addNotificationCenterWithName:(NSString *)name recetive:(HJNoticationBlock)recetive
+- (void)hj_addNotificationCenterWithName:(NSString *)name recetive:(HJNoticationBlock)recetive
 {
     if ([self.notifiNameArr containsObject:name]) {
         return;
@@ -69,11 +70,11 @@
     
     [self.notifiNameArr addObject:name];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ad_executeNotificationMethod:) name:name object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hj_executeNotificationMethod:) name:name object:nil];
     objc_setAssociatedObject(self, (__bridge const void *)(name), recetive, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (void)ad_executeNotificationMethod:(NSNotification *)notification
+- (void)hj_executeNotificationMethod:(NSNotification *)notification
 {
     for (NSString *name in self.notifiNameArr) {
         HJNoticationBlock block = objc_getAssociatedObject(self, (__bridge const void *)(name));
@@ -88,7 +89,7 @@
  *
  *  @param name 通知名字
  */
-- (void)ad_removeNotificationWithName:(NSString *)name
+- (void)hj_removeNotificationWithName:(NSString *)name
 {
     if ([self.notifiNameArr containsObject:name]) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:name object:nil];
@@ -100,7 +101,7 @@
 /**
  *  移除所有通知
  */
-- (void)ad_removeAllNotification
+- (void)hj_removeAllNotification
 {
     for (NSString *name in self.notifiNameArr) {
         [[NSNotificationCenter defaultCenter] removeObserver:self name:name object:nil];
@@ -116,7 +117,7 @@
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openCameraCompletion:(HJImageBlcok)completion
+- (void)hj_openCameraCompletion:(HJImageBlcok)completion
 {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
@@ -133,7 +134,7 @@
  *
  *  @param completion 返回图片回调
  */
-- (void)ad_openAlbumCompletion:(HJImageBlcok)completion
+- (void)hj_openAlbumCompletion:(HJImageBlcok)completion
 {
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     [imagePickerController setDelegate:self];
@@ -147,9 +148,9 @@
 /**
  *  保存图片到相册
  */
-- (void)ad_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion
+- (void)hj_saveImageToAlbumWithImage:(UIImage *)image complection:(HJCompletionBlcok)completion
 {
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(ad_image:didFinishSavingWithError:contextInfo:), NULL);
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(hj_image:didFinishSavingWithError:contextInfo:), NULL);
     
     objc_setAssociatedObject(self, (__bridge const void *)(image), completion, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -161,7 +162,7 @@
  *  @param error       错误信息
  *  @param contextInfo 上下文信息
  */
-- (void)ad_image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
+- (void)hj_image: (UIImage *) image didFinishSavingWithError: (NSError *) error contextInfo: (void *) contextInfo
 {
     NSString *msg = nil ;
     if(error != NULL){

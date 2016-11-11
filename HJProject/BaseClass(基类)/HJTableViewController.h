@@ -1,15 +1,14 @@
 //
-//  ADTableViewController.h
+//  HJTableViewController.h
 //  CRM
 //
 //  Created by User on 16/8/10.
 //  Copyright © 2016年 Dellidc. All rights reserved.
 //
 
-#import "ADBaseViewController.h"
-#import "KVOArray.h"
+#import "HJBaseViewController.h"
 
-@interface ADTableViewController : ADBaseViewController
+@interface HJTableViewController : HJBaseViewController
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, assign) NSInteger currentPageNum; // 分页数

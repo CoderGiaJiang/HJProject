@@ -7,6 +7,7 @@
 //
 
 #import "HJNavigationController.h"
+#import "Header.h"
 
 @interface HJNavigationController ()<UIGestureRecognizerDelegate>
 
